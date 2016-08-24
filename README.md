@@ -1,6 +1,6 @@
 #uBlock Origin Edge Support
 
-<img src="https://github.com/devanshdesai/uBlock/blob/master/ublock.png" width="250px">
+<img src="https://github.com/devanshdesai/uBlock/blob/master/ublock.png">
 
 
 I added Microsoft Edge support for uBlock Origin. Chrome doesn't have good touchpad support on Windows 10 but Edge does so I decided to port uBlock Origin over to Microsoft Edge.
