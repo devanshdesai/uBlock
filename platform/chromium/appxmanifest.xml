@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package 
+	xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+	xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+	xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+	IgnorableNamespaces="uap3">
+	<Identity 
+		Name="uBlock Origin" 
+		Publisher="All uBlock Origin contributors" 
+		Version="1.8.5.102" /> <!-- UPDATE IDENTITY -->
+
+	<Properties> 
+		<DisplayName>uBlock Origin</DisplayName> 
+		<PublisherDisplayName>All uBlock Origin contributors</PublisherDisplayName> <!-- UPDATE PLUBLISHER DISPLAY NAME -->
+		<Logo>Assets\StoreLogo.png</Logo> 
+	</Properties> 
+
+	<Dependencies> 
+		<TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.14287.0" MaxVersionTested="12.0.0.0" /> 
+	</Dependencies> 
+
+	<Resources>
+		<Resource Language="en" />
+	</Resources> 
+
+	<Applications> 
+		<Application Id="App">
+			<uap:VisualElements
+				AppListEntry="none"
+				DisplayName="uBlock Origin"
+				Square150x150Logo="Assets\Square150x150Logo.png"
+        		Square44x44Logo="Assets\Square44x44Logo.png"
+				Description="__MSG_extShortDesc__"
+				BackgroundColor="transparent">
+			</uap:VisualElements>
+			<Extensions>
+				<uap3:Extension Category="windows.appExtension">
+					<uap3:AppExtension
+						Name="com.microsoft.edge.extension"
+						Id="EdgeExtension"
+						PublicFolder="Extension"
+						DisplayName="uBlock Origin">
+						<uap3:Properties>
+							<Capabilities>
+								<Capability Name="storage"/>
+								<Capability Name="tabs"/>
+								<Capability Name="webNavigation"/>
+								<Capability Name="webRequest"/>
+								<Capability Name="websiteContent"/>
+							</Capabilities>
+						</uap3:Properties>
+					</uap3:AppExtension>
+				</uap3:Extension>
+			</Extensions>
+		</Application> 
+	</Applications>
+</Package>
