@@ -1,3 +1,21 @@
+#uBlock Origin Edge Support
+
+I added Microsoft Edge support for uBlock Origin. Chrome doesn't have good touchpad support on Windows 10 but Edge does so I decided to port uBlock Origin over to Microsoft Edge.
+
+### Instructions for Installation
+
+1. In Microsoft Edge, go to the URL 'about:flags'.
+2. Scroll down and enable 'Enable extension developer features'.
+3. Go to the extensions menu in Edge and click on 'Load extension' at the bottom.
+4. Browse to 'platform > chromium' from this repository's main directory and click 'Select folder'.
+5. Click on the gear next to the uBlock Origin extension in the extensions list and enable it.
+6. Right click on the extension in the extensions menu and click 'Show button next to the address bar'.
+7. Enjoy uBlock Origin on Microsoft Edge!
+
+You will have to complete steps 5 and 6 every time you start up Edge. This is an issue with Edge because it doesn't allow sideloaded extensions to automatically start up. Once Microsoft opens up the Edge platform to allow 3rd party extensions in the Windows 10 Store application, you will be able to install uBlock Origin much faster.
+
+
+
 [![Build](https://travis-ci.org/gorhill/uBlock.svg?branch=master)](https://travis-ci.org/gorhill/uBlock)
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/ublock/localized.png)](https://crowdin.com/project/ublock)
 [![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/gorhill/uBlock/blob/master/LICENSE.txt)
@@ -12,7 +30,7 @@ The donations sought by the [individual](https://github.com/chrisaljoudi/) behin
 
 uBlock Origin is **NOT** an "ad blocker": [it is a wide-spectrum blocker](https://github.com/gorhill/uBlock/wiki/Blocking-mode) -- which happens to be able to function as a mere "ad blocker". The default behavior of uBlock Origin when newly installed is to block ads, trackers and malware sites -- through [_EasyList_](https://easylist.github.io/#easylist), [_EasyPrivacy_](https://easylist.github.io/#easyprivacy), [_Peter Lowe’s ad/tracking/malware servers_](https://pgl.yoyo.org/adservers/policy.php), various lists of [malware](http://www.malwaredomainlist.com/) [sites](http://www.malwaredomains.com/), and uBlock Origin's [own filter lists](https://github.com/uBlockOrigin/uAssets/tree/master/filters).
 
-*** 
+***
 
 <h1 align="center">
 <sub>
@@ -60,7 +78,7 @@ uBlock Origin
 
  Basic mode | Advanced-user mode
 :----------:|:------------------:
-[Popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface) | [A point-and-click firewall which can be configured on a per-site basis](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide) 
+[Popup user interface](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface) | [A point-and-click firewall which can be configured on a per-site basis](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide)
 <a href="https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface"><img src="https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1.png" /></a><br><sup>.<br>.</sup> | <a href="https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-quick-guide"><img src="https://cloud.githubusercontent.com/assets/585534/9293685/378d18f0-4402-11e5-9255-8ed3fdbfa957.png" /></a><br><sup>Configure as you wish:<br>picture shows 3rd-party scripts and frames blocked by default everywhere</sup>
 
 Visit the [uBlock Origin's wiki](https://github.com/gorhill/uBlock/wiki) for documentation.
@@ -107,7 +125,7 @@ uBlock Origin is also easy on the CPU<br>
 <p align="center">
 Being lean and efficient doesn't mean blocking less<br>
 <img src="https://raw.githubusercontent.com/gorhill/uBlock/master/doc/benchmarks/privex-201502-16.png" /><br>
-<sup>For details of benchmark, see 
+<sup>For details of benchmark, see
 <a href="https://github.com/gorhill/uBlock/wiki/uBlock-and-others%3A-Blocking-ads%2C-trackers%2C-malwares">uBlock₀ and others: Blocking ads, trackers, malwares</a>.
 </p>
 
